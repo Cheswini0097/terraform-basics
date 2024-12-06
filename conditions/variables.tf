@@ -1,0 +1,3 @@
+variable "envinorment" {
+    default = "dev"
+}
