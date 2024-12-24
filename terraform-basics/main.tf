@@ -27,6 +27,7 @@ resource "aws_instance" "terraform" {
     instance_type = "t2.micro"
     subnet_id     = "subnet-0958a471debd0c57a"
     vpc_security_group_ids = [aws_security_group.allow_ssh_terraform.id]
+    associate_public_ip_address = true
     tags = {
     Name = "allow ssh"
 }
